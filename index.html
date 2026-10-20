@@ -1,112 +1,125 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WW Pocket Signals - 5 Fonts Motivational No Year</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@700;800&family=Montserrat:ital,wght@0,900;1,900&family=Oswald:wght@600;700&family=Anton&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WW Pocket Signals - Conquer</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{overflow-x:hidden;width:100%;background:#050505}
-body{color:#fff;font-family:'Poppins',sans-serif;display:flex;justify-content:center}
-.wrap{width:100%;max-width:390px;padding:12px 10px;background:#050505;overflow-x:hidden}
-.bebas{font-family:'Bebas Neue',sans-serif}
-.oswald{font-family:'Oswald',sans-serif}
-.mont{font-family:'Montserrat',sans-serif}
-.poppins{font-family:'Poppins',sans-serif}
-.anton{font-family:'Anton',sans-serif;letter-spacing:1px}
-.btn{width:100%;height:52px;border-radius:28px;display:flex;align-items:center;justify-content:center;font-weight:800;text-decoration:none;margin:8px 0;font-size:12px}
-.green{background:linear-gradient(90deg,#00D084,#00FF88);color:#fff}
-.card{background:#141414;border:1px solid #222;border-radius:16px;padding:14px;margin:10px 0;width:100%}
-.badge{padding:5px 10px;border-radius:12px;font-size:7px;font-weight:700}
-img{max-width:100%;height:auto;display:block}
-.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;width:100%}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#050505;color:#fff;font-family:Inter,Segoe UI,Arial,sans-serif;letter-spacing:.3px;line-height:1.8}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid #151515}
+.logo-wrap{display:flex;align-items:center;gap:10px}
+.logo-circle{width:42px;height:42px;border-radius:50%;border:2px solid #d4af37;background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#d4af37;font-weight:900;font-size:14px}
+.live{color:#00ff88;font-size:11px;display:flex;align-items:center;gap:6px;letter-spacing:1px}
+.dot{width:8px;height:8px;background:#00ff88;border-radius:50%;box-shadow:0 0 10px #00ff88;animation:p 2s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.4}}
+.hero{text-align:center;padding:46px 20px 20px}
+.hero-logo{width:340px;max-width:88vw;height:340px;max-height:88vw;margin:0 auto 28px;border-radius:50%;border:3px solid #d4af37;background:radial-gradient(circle at 30% 30%, #1a1a1a, #000);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(212,175,55,.25),0 0 30px rgba(0,255,136,.15);position:relative}
+.hero-logo img{width:85%;height:85%;object-fit:contain;border-radius:50%}
+.glow{position:absolute;inset:-20px;border-radius:50%;background:radial-gradient(circle, rgba(0,255,136,.12), transparent 70%);z-index:-1}
+.m1{font-size:28px;font-weight:900;line-height:1.15;text-transform:uppercase}
+.m2{color:#d4af37;font-size:20px;font-weight:800;margin:10px 0;text-transform:uppercase}
+.mdesc{color:#aaa;font-size:17px;max-width:600px;margin:14px auto 26px;line-height:1.8}
+.chat{max-width:620px;margin:0 auto 28px;background:#101010;border:1px solid #222;border-radius:14px;overflow:hidden}
+.chat-top{padding:12px 16px;background:#161616;display:flex;justify-content:space-between;font-size:11px;color:#d4af37;letter-spacing:1px}
+.candles{position:relative;height:160px;background:#080808;padding:20px 16px 10px;display:flex;align-items:flex-end;gap:5px}
+.candle{width:9px;border-radius:2px;flex-shrink:0}
+.sig{position:absolute;left:12px;right:12px;padding:10px 12px;border-radius:9px;font-size:13px;font-weight:700;backdrop-filter:blur(8px);line-height:1.4}
+.buy{top:14px;background:rgba(0,255,136,.11);border:1px solid #00ff88;color:#00ff88}
+.sell{bottom:38px;background:rgba(212,175,55,.11);border:1px solid #d4af37;color:#d4af37}
+.promo{max-width:420px;margin:22px auto;background:#111;border:1px solid #d4af37;border-radius:10px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center}
+.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px 0}
+.btn{padding:14px 26px;border-radius:10px;font-weight:800;text-decoration:none;font-size:14px}
+.btn-g{background:#00ff88;color:#000}
+.btn-o{border:1.5px solid #d4af37;color:#d4af37;background:transparent}
+.section{padding:70px 20px;max-width:900px;margin:0 auto}
+.t{color:#d4af37;font-size:22px;font-weight:900;text-align:center;margin-bottom:28px;letter-spacing:1px;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#121212;border:1px solid rgba(212,175,55,.14);border-radius:12px;padding:20px;line-height:1.7}
+.final{background:linear-gradient(135deg, rgba(212,175,55,.15), rgba(0,255,136,.08));border-top:1px solid #222;border-bottom:1px solid #222;text-align:center;padding:60px 20px}
+.footer{text-align:center;padding:36px 20px;color:#555;font-size:12px}
 </style>
 </head>
-<body><div class="wrap">
-
-<div style="text-align:center">
-<div style="display:flex;align-items:center;justify-content:center;gap:8px">
-<div style="width:28px;height:28px;background:linear-gradient(135deg,#C9A86A,#FFD700);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#000;font-weight:900;font-size:12px" class="mont">WW</div>
-<div class="oswald" style="letter-spacing:4px;font-size:10px;font-weight:700">WW POCKET SIGNALS</div>
-<div class="badge anton" style="background:#111;border:1px solid #222;color:#888;font-size:6px">VERIFIED BOT</div>
-</div>
-<div class="oswald" style="margin-top:6px;background:#0F0F0F;border:1px solid #222;border-radius:20px;padding:4px 10px;font-size:6px;display:inline-block;color:#777;letter-spacing:1px">100% FREE • NO SUBSCRIPTION • INSTANT ACCESS</div>
+<body>
+<div class="nav">
+<div class="logo-wrap"><div class="logo-circle">WW</div><span style="color:#d4af37;font-weight:800">WW Pocket Signals</span></div>
+<div class="live"><span class="dot"></span> ONLINE • LIVE</div>
 </div>
 
-<div class="bebas" style="font-size:68px;line-height:0.82;margin:18px 0 4px;background:linear-gradient(90deg,#fff 0%,#C9A86A 45%,#FFD700 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0 4px 20px rgba(201,168,106,0.3)">BUY & SELL<br>SIGNALS</div>
-<div class="oswald" style="letter-spacing:5px;font-size:13px;color:#C9A86A;font-weight:700">THAT WINNERS TRUST • BUILT FOR WINNERS</div>
-<div class="mont" style="font-size:18px;font-style:italic;font-weight:900;color:#FFD700;margin-top:10px;text-shadow:0 2px 10px rgba(255,215,0,0.4)">STOP GUESSING. START CONQUERING. 🔥</div>
-<div class="poppins" style="font-size:11px;color:#9CA3AF;line-height:1.6;margin-top:8px">
-100% FREE BOT • REAL + OTC • <span class="anton" style="color:#C9A86A;font-size:12px">75 Pairs Covered.</span><br>
-<span style="color:#fff;font-weight:800">Professional precision with RSI+EMA200+Stochastic triple confluence.</span><br>
-<span style="font-size:10px">Built for disciplined traders, not hype.</span>
+<div class="hero">
+<div class="hero-logo">
+<div class="glow"></div>
+<!-- Replace src with your logo file - upload logo.jpg to GitHub -->
+<img src="logo.jpg" alt="WW Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+<div style="display:none;text-align:center"><div style="font-size:64px">🤖</div><div style="color:#d4af37;font-size:12px;margin-top:6px;letter-spacing:2px">WW POCKET SIGNALS</div><div style="color:#00ff88;font-size:20px">↗</div></div>
 </div>
 
-<div class="card" style="border:2px solid #00D084;background:linear-gradient(135deg,#111A14,#0A1A0F);display:flex;justify-content:space-between;align-items:center">
-<div><div class="oswald" style="font-size:7px;color:#00D084;letter-spacing:3px;font-weight:700">PROMO CODE • 60% BONUS • YOUR EDGE</div><div class="bebas" style="font-size:36px;letter-spacing:3px">KVF341</div><div class="poppins" style="font-size:7px;color:#666">Copy it. Claim it. Dominate.</div></div>
-<button onclick="navigator.clipboard.writeText('KVF341')" style="background:linear-gradient(90deg,#00D084,#00FF88);color:#fff;border:none;border-radius:12px;padding:12px 18px;font-weight:900" class="mont">COPY</button>
+<div class="m1">They Sleep.<br>Your Bot Reads.</div>
+<div class="m2">While They Guess, You Conquer.</div>
+<div class="mdesc">Your WW robot with two feet stands firm in front of the charts 24/7 — reading every candlestick, every BUY, every SELL — so you don't have to. Stop watching life pass. Start taking it.</div>
+
+<div class="chat">
+<div class="chat-top"><span>LIVE CHART // BOT READING</span><span style="color:#00ff88">● LIVE CANDLES</span></div>
+<div class="candles" id="c">
+<div class="sig buy">BOT • LIVE BUY BTCUSDT | Entry: 64,210 | TP: 65,100 | SL: 63,500 | 92% ▶ BUY</div>
+<div class="sig sell">BOT • LIVE SELL ETHUSDT | Entry: 2,880 | TP: 2,820 | SL: 2,910 | 78% ▼ SELL</div>
+</div>
+<div style="padding:10px 16px;background:#0a0a0a;color:#00ff88;font-size:12px">ALERT: Breakout detected - Bot taking action now 🚀 Momentum rising</div>
 </div>
 
-<a class="btn green mont" href="https://t.me/WWPocketSignalsbot">Join Free on Telegram</a>
-<a class="btn anton" href="https://t.me/WWPocketSignalsbot" style="background:#0F0F0F;border:1px solid #C9A86A;color:#C9A86A;letter-spacing:1px">Get 60% Bonus on Pocket Option</a>
-
-<div style="margin:14px 0;background:#0A0A0A;border:1px solid #222;border-radius:20px;padding:12px">
-<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><div class="oswald" style="letter-spacing:4px;font-size:10px;font-weight:700">WW POCKET SIGNALS</div><div class="oswald" style="font-size:6px;color:#555">WW_BOT V4.2 • ONLINE • LIVE</div></div>
-<div class="bebas" style="font-size:32px">BUY & SELL SIGNALS</div>
-<div style="margin:10px 0"><img src="robot.jpg" style="width:100%;border-radius:14px;border:1px solid #222" alt="robot"></div>
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
-<div class="card" style="padding:8px;text-align:center;background:#0F0F0F"><div class="oswald" style="font-size:5px;color:#888">PAIRS</div><div class="anton" style="font-size:15px;color:#C9A86A">75 COVERED</div></div>
-<div class="card" style="padding:8px;text-align:center;background:#0F0F0F"><div class="oswald" style="font-size:5px;color:#888">MODES</div><div class="anton" style="font-size:15px">AUTO+MANUAL</div></div>
-<div class="card" style="padding:8px;text-align:center;background:#0F0F0F;border-color:#C9A86A"><div class="oswald" style="font-size:5px;color:#C9A86A">COST</div><div class="anton" style="font-size:15px;color:#C9A86A">FREE FOREVER</div></div>
-</div>
+<div class="promo">
+<span style="font-size:14px">PROMO: <b style="color:#d4af37">KVF341</b> <span style="color:#00ff88">60% BONUS</span></span>
+<button onclick="navigator.clipboard.writeText('KVF341');this.innerText='COPIED!'" style="background:#d4af37;color:#000;border:none;padding:8px 14px;border-radius:6px;font-weight:800;cursor:pointer">COPY</button>
 </div>
 
-<div class="card" style="border-left:5px solid #00FF88"><div style="display:flex;justify-content:space-between"><span class="bebas" style="font-size:24px;color:#00FF88">BUY Signals</span><span class="badge anton" style="background:rgba(0,255,136,0.15);color:#00FF88;font-size:8px">LIVE FEED</span></div><div class="poppins" style="font-size:10px;color:#9CA3AF;margin-top:6px">High-precision long entries filtered by RSI oversold + EMA200 + Stochastic cross. Clear entry window.</div></div>
-
-<div class="card" style="border-left:5px solid #FF4444"><div style="display:flex;justify-content:space-between"><span class="bebas" style="font-size:24px;color:#FF4444">SELL Signals</span><span class="badge anton" style="background:rgba(255,68,68,0.15);color:#FF4444;font-size:8px">LIVE FEED</span></div><div class="poppins" style="font-size:10px;color:#9CA3AF;margin-top:6px">Short setups with confluence confirmation. Avoids choppy zones, waits for momentum + overbought alignment.</div></div>
-
-<div class="card" style="border:2px solid #C9A86A;background:linear-gradient(135deg,#1A1810,#141414)"><div style="display:flex;justify-content:space-between"><span class="bebas" style="font-size:24px;color:#C9A86A">FREE Forever</span><span class="badge anton" style="background:linear-gradient(90deg,#C9A86A,#FFD700);color:#000;font-size:9px">NO FEES</span></div><div class="poppins" style="font-size:10px;color:#9CA3AF;margin-top:6px">Community-first tool. No subscription, no hidden costs. 5 free signals/day for starters, unlimited with activity.</div></div>
-
-<div style="margin-top:20px"><div class="oswald" style="letter-spacing:5px;color:#C9A86A;font-size:9px;font-weight:700">WHY TRADERS CHOOSE WW</div><div class="bebas" style="font-size:36px;line-height:0.9;margin-top:6px">Built on confluence,<br><span class="mont" style="color:#C9A86A;font-style:italic;font-weight:900">not guesswork.</span></div><div class="poppins" style="font-size:11px;color:#9CA3AF;margin-top:10px">Every signal passes triple filter logic. No martingale, no blind bots. You stay in control.</div></div>
-
-<div class="card"><div style="display:flex;gap:10px"><div style="width:28px;height:28px;background:#111;border:1px solid #222;border-radius:8px;display:flex;align-items:center;justify-content:center">📊</div><div><div class="oswald" style="font-size:11px;font-weight:700">RSI + EMA200 + Stochastic</div><div class="poppins" style="font-size:9px;color:#888">Triple confluence: momentum + trend + timing. Signals only when all align.</div></div></div></div>
-<div class="card"><div style="display:flex;gap:10px"><div style="width:28px;height:28px;background:#111;border:1px solid #222;border-radius:8px;display:flex;align-items:center;justify-content:center">⚙️</div><div><div class="oswald" style="font-size:11px;font-weight:700">Auto & Manual Modes</div><div class="poppins" style="font-size:9px;color:#888">Auto alerts in Telegram, or manual chart confirmation.</div></div></div></div>
-<div class="card"><div style="display:flex;gap:10px"><div style="width:28px;height:28px;background:#111;border:1px solid #222;border-radius:8px;display:flex;align-items:center;justify-content:center">€</div><div><div class="oswald" style="font-size:11px;font-weight:700">5 Free Signals / Day for Starters</div><div class="poppins" style="font-size:9px;color:#888">Test the edge risk free. Upgrade activity unlocks unlimited flow.</div></div></div></div>
-<div class="card" style="border:2px solid #C9A86A;background:linear-gradient(135deg,#1A1810,#141414)"><div style="display:flex;gap:10px"><div style="width:28px;height:28px;background:linear-gradient(135deg,#C9A86A,#FFD700);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#000;font-weight:900">!</div><div><div class="oswald" style="font-size:11px;font-weight:700">Educational Tool</div><div class="poppins" style="font-size:9px;color:#9CA3AF">We provide analysis framework. You make final decisions. Practice on demo. <span class="mont" style="color:#C9A86A;font-weight:900;font-style:italic">DISCIPLINE > MOTIVATION. 🔥</span></div></div></div></div>
-
-<div class="card" style="background:#0A0A0A;margin-top:14px">
-<div style="display:flex;justify-content:space-between"><span class="oswald" style="font-size:7px;color:#888;letter-spacing:1px">SIGNAL FEED • REAL + OTC</span><span class="badge anton" style="background:linear-gradient(90deg,#C9A86A,#FFD700);color:#000">FREE 5/DAY</span></div>
-<div style="margin-top:10px;display:flex;flex-direction:column;gap:8px">
-<div style="background:#0F0F0F;border:1px solid #222;border-radius:10px;padding:10px;display:flex;justify-content:space-between"><div style="display:flex;gap:8px;align-items:center"><div style="width:24px;height:24px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#00FF88">↗</div><div><div style="font-size:10px;font-weight:700">EUR/USD (OTC)</div><div style="font-size:7px;color:#666">14:30 • 91% CONFIDENCE</div></div></div><div class="badge anton" style="background:rgba(0,255,136,0.15);color:#00FF88">BUY</div></div>
-<div style="background:#0F0F0F;border:1px solid #222;border-radius:10px;padding:10px;display:flex;justify-content:space-between"><div style="display:flex;gap:8px;align-items:center"><div style="width:24px;height:24px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#FF4444">↘</div><div><div style="font-size:10px;font-weight:700">BTC/USD</div><div style="font-size:7px;color:#666">14:22 • 85% CONFIDENCE</div></div></div><div class="badge anton" style="background:rgba(255,68,68,0.15);color:#FF4444">SELL</div></div>
-<div style="background:#0F0F0F;border:1px solid #222;border-radius:10px;padding:10px;display:flex;justify-content:space-between"><div style="display:flex;gap:8px;align-items:center"><div style="width:24px;height:24px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#00FF88">↗</div><div><div style="font-size:10px;font-weight:700">GBP/JPY</div><div style="font-size:7px;color:#666">14:15 • 94% CONFIDENCE</div></div></div><div class="badge anton" style="background:rgba(0,255,136,0.15);color:#00FF88">BUY</div></div>
-<div style="background:#0F0F0F;border:1px solid #222;border-radius:10px;padding:10px;display:flex;justify-content:space-between"><div style="display:flex;gap:8px;align-items:center"><div style="width:24px;height:24px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#FF4444">↘</div><div><div style="font-size:10px;font-weight:700">AUD/CAD (OTC)</div><div style="font-size:7px;color:#666">14:08 • 90% CONFIDENCE</div></div></div><div class="badge anton" style="background:rgba(255,68,68,0.15);color:#FF4444">SELL</div></div>
-<div style="background:#0F0F0F;border:1px solid #222;border-radius:10px;padding:10px;display:flex;justify-content:space-between"><div style="display:flex;gap:8px;align-items:center"><div style="width:24px;height:24px;background:#111;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#00FF88">↗</div><div><div style="font-size:10px;font-weight:700">USD/CHF</div><div style="font-size:7px;color:#666">13:55 • 79% CONFIDENCE</div></div></div><div class="badge anton" style="background:rgba(0,255,136,0.15);color:#00FF88">BUY</div></div>
+<div class="ctas">
+<a href="https://t.me/WWPocketSignalsbot" class="btn btn-g">🚀 Join Free - Let Bot Read For You</a>
+<a href="https://po-op.co/r/KVF341" class="btn btn-o">⚡ Get 60% Bonus - Start Conquering</a>
 </div>
 </div>
 
-<div style="margin-top:20px"><div class="oswald" style="letter-spacing:4px;color:#C9A86A;font-size:8px">COMMUNITY FEEDBACK</div><div class="bebas" style="font-size:28px;margin-top:4px">Traders sharing their workflow</div></div>
-
-<div class="card"><div style="color:#FFD700;font-size:10px">★★★★★</div><div class="poppins" style="font-size:10px;color:#fff;margin-top:6px;font-style:italic">"I use WW signals as confluence only. RSI+EMA filter actually stops me from overtrading."</div><div style="display:flex;justify-content:space-between;margin-top:8px"><span style="font-size:8px;font-weight:700">Arjun P. • Forex Learner</span><span class="badge anton" style="background:rgba(0,208,132,0.15);color:#00D084;font-size:6px">VERIFIED</span></div></div>
-<div class="card"><div style="color:#FFD700;font-size:10px">★★★★★</div><div class="poppins" style="font-size:10px;color:#fff;margin-top:6px;font-style:italic">"Clean alerts, no spam. Manual mode helps me check chart first."</div><div style="display:flex;justify-content:space-between;margin-top:8px"><span style="font-size:8px;font-weight:700">Sofia L. • OTC trader</span><span class="badge anton" style="background:rgba(0,208,132,0.15);color:#00D084;font-size:6px">VERIFIED</span></div></div>
-<div class="card"><div style="color:#FFD700;font-size:10px">★★★★★</div><div class="poppins" style="font-size:10px;color:#fff;margin-top:6px;font-style:italic">"Joined Telegram free. Promo code KVF341 gave extra balance."</div><div style="display:flex;justify-content:space-between;margin-top:8px"><span style="font-size:8px;font-weight:700">Marcus T. • UK</span><span class="badge anton" style="background:rgba(0,208,132,0.15);color:#00D084;font-size:6px">VERIFIED</span></div></div>
-
-<div style="margin-top:24px;text-align:center;background:#111;border:1px solid #222;border-radius:18px;padding:16px">
-<div class="bebas" style="font-size:26px">Ready to test WW Signals free?</div><div class="oswald" style="font-size:7px;color:#666;margin-top:4px">Join Telegram • 75 pairs • RSI • EMA200 • Stochastic</div>
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px">
-<a class="btn green mont" href="https://t.me/WWPocketSignalsbot" style="font-size:10px">Join Free on Telegram</a>
-<a class="btn mont" href="https://t.me/WWPocketSignalsbot" style="background:linear-gradient(90deg,#C9A86A,#FFD700);color:#000;font-size:10px">Claim 60% Bonus</a>
-</div>
-<div class="mont" style="font-size:11px;color:#C9A86A;margin-top:10px;font-style:italic;font-weight:900">DISCIPLINE > MOTIVATION. BUT WE GIVE YOU BOTH. 🔥</div>
-</div>
-
-<div style="text-align:center;margin-top:20px;padding-top:12px;border-top:1px solid #222">
-<div style="display:flex;align-items:center;justify-content:center;gap:8px"><div style="width:28px;height:28px;background:linear-gradient(135deg,#C9A86A,#FFD700);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#000;font-weight:900;font-size:10px" class="mont">WW</div><span class="bebas" style="letter-spacing:2px;font-size:12px;color:#C9A86A">WW POCKET SIGNALS • Educational Tool</span></div>
-<div class="poppins" style="font-size:7px;color:#666;margin-top:10px;line-height:1.6">For educational purpose, not financial advice. Trading involves risk. Past performance does not guarantee future results. WW Pocket Signals provides technical analysis framework based on RSI, EMA200 and Stochastic indicators. You are responsible for your own trading decisions. Use demo account to practice. 100% free refers to signal access. No income claims, no guaranteed profits. Trade responsibly.<br><span class="mont" style="color:#C9A86A;font-weight:800">🔥 Built for Winners. No Hype. Evergreen. Discipline > Motivation.</span></div>
-<div style="display:flex;gap:6px;justify-content:center;margin-top:12px;flex-wrap:wrap">
-<span class="badge oswald" style="background:#1A1A1A;border:1px solid #222;color:#666">FB ADS COMPLIANT</span>
-<span class="badge oswald" style="background:#1A1A1A;border:1px solid #222;color:#666">NO INCOME CLAIMS</span>
-<span class="badge oswald" style="background:#1A1A1A;border:1px solid #222;color:#666">RISK DISCLOSURE</span>
-<span class="badge anton" style="background:linear-gradient(90deg,#C9A86A,#FFD700);color:#000">EVERGREEN • NO YEAR</span>
+<div class="section">
+<div class="t">They Conquered - You're Next</div>
+<div class="cards">
+<div class="card">⭐⭐⭐⭐⭐<br><br>"I was losing. Now my bot reads while I sleep. $340 first day! Two feet firm on ground!"<br><br><b>- James K., UK</b></div>
+<div class="card">⭐⭐⭐⭐⭐<br><br>"This robot never misses a candle! Stands firm, trades firm. Best signals!"<br><br><b>- Sarah M., Dubai</b></div>
+<div class="card">⭐⭐⭐⭐⭐<br><br>"From watcher to conqueror. KVF341 + WW robot = life changed."<br><br><b>- David O., Uganda</b></div>
 </div>
 </div>
 
-</div></body></html>
+<div class="final">
+<div style="font-size:24px;font-weight:900;max-width:700px;margin:0 auto 14px;line-height:1.3">YOUR CHARTS ARE BEING READ RIGHT NOW.<br><span style="color:#d4af37">THE ONLY QUESTION IS - ARE YOU PROFITING OR JUST WATCHING?</span></div>
+<div style="color:#aaa;max-width:600px;margin:0 auto 26px">Stop scrolling. Start conquering. One click. Free forever. Bot is sitting in front of chart reading - are you in?</div>
+<a href="https://t.me/WWPocketSignalsbot" class="btn btn-g" style="font-size:18px;padding:18px 36px">YES, I WANT MY BOT READING NOW →</a>
+</div>
+
+<div class="section" style="padding-top:50px">
+<div class="cards">
+<div class="card" style="text-align:center"><b>75+ PAIRS</b><br><span style="color:#aaa">Crypto, Forex, Stocks - Bot reads all</span></div>
+<div class="card" style="text-align:center"><b>AUTO & MANUAL</b><br><span style="color:#aaa">Let bot trade or signal you</span></div>
+<div class="card" style="text-align:center"><b>FREE FOREVER</b><br><span style="color:#aaa">No fees, just KVF341 bonus</span></div>
+</div>
+</div>
+
+<div class="footer">WW Pocket Signals • Built for Conquerors • Conquer the Markets</div>
+
+<script>
+const cont=document.getElementById('c');
+for(let i=0;i<28;i++){
+let h=28+Math.random()*110;
+let green=Math.random()>0.42;
+let d=document.createElement('div');
+d.className='candle';
+d.style.height=h+'px';
+d.style.background=green?'#00ff88':'#ff4444';
+d.style.boxShadow=green?'0 0 6px rgba(0,255,136,.4)':'0 0 6px rgba(255,68,68,.3)';
+let w=document.createElement('div');
+w.style.width='1px';w.style.height='14px';w.style.background=green?'#00ff88':'#ff4444';w.style.margin='0 auto';
+let wrap=document.createElement('div');
+wrap.style.display='flex';wrap.style.flexDirection='column';wrap.style.alignItems='center';wrap.style.gap='2px';
+wrap.appendChild(w);wrap.appendChild(d);
+cont.appendChild(wrap);
+}
+</script>
+</body>
+                                              </html>
