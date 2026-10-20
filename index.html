@@ -4,11 +4,27 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}body{background:#050505;color:#fff;font-family:Inter,Arial,sans-serif;letter-spacing:.3px;line-height:1.8}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #151515}
-.logo{display:flex;align-items:center;gap:10px}.lc{width:40px;height:40px;border-radius:50%;border:2px solid #d4af37;overflow:hidden;background:#000}.lc img{width:100%;height:100%;object-fit:cover}
+.logo{display:flex;align-items:center;gap:10px}.lc{width:40px;height:40px;border-radius:50%;border:2px solid #d4af37;overflow:hidden;background:#000;flex-shrink:0}.lc img{width:100%;height:100%;object-fit:cover}
 .live{color:#00ff88;font-size:11px;display:flex;gap:6px;align-items:center}.dot{width:8px;height:8px;background:#00ff88;border-radius:50%;box-shadow:0 0 8px #00ff88}
-.hero{text-align:center;padding:40px 20px 20px}.hl{width:380px;max-width:88vw;height:380px;max-width:88vw;margin:0 auto 24px;border-radius:50%;border:3px solid #d4af37;overflow:hidden;box-shadow:0 0 60px rgba(212,175,55,.3),0 0 30px rgba(0,255,136,.2)}.hl img{width:100%;height:100%;object-fit:cover}
+.hero{text-align:center;padding:40px 20px 20px}
+/* FIXED CIRCLE - Perfect circle on all phones */
+.hl{
+  width:320px;
+  height:320px;
+  aspect-ratio:1/1;
+  max-width:80vw;
+  max-height:80vw;
+  margin:0 auto 24px;
+  border-radius:50%;
+  border:3px solid #d4af37;
+  overflow:hidden;
+  box-shadow:0 0 60px rgba(212,175,55,.3),0 0 30px rgba(0,255,136,.2);
+  background:#000;
+  flex-shrink:0;
+}
+.hl img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;border-radius:50%}
 .m1{font-size:28px;font-weight:900}.m2{color:#aaa;font-size:18px;margin:8px 0 20px}
-.btn{padding:14px 28px;border-radius:10px;font-weight:800;text-decoration:none;display:inline-block;margin:10px 6px}.bg{background:#00ff88;color:#000}.bo{border:1.5px solid #d4af37;color:#d4af37}
+.btn{padding:14px 28px;border-radius:10px;font-weight:800;text-decoration:none;display:inline-block;margin:10px 6px}.bg{background:#00ff88;color:#000}.bo{border:1.5px solid #d4af37;color:#d4af37;background:rgba(212,175,55,.08)}
 .chat{max-width:620px;margin:20px auto;background:#101010;border:1px solid #222;border-radius:14px;overflow:hidden}.ct{padding:10px 16px;background:#161616;color:#d4af37;font-size:11px;display:flex;justify-content:space-between}
 .cand{position:relative;height:160px;background:#080808;display:flex;align-items:flex-end;gap:5px;padding:20px 16px 10px}.sig{position:absolute;left:12px;right:12px;padding:10px;border-radius:8px;font-size:13px;font-weight:700;backdrop-filter:blur(6px)}.buy{top:14px;background:rgba(0,255,136,.1);border:1px solid #00ff88;color:#00ff88}.sell{bottom:38px;background:rgba(212,175,55,.1);border:1px solid #d4af37;color:#d4af37}
 .section{padding:60px 20px;max-width:900px;margin:0 auto}.t{color:#d4af37;font-size:22px;font-weight:900;text-align:center;margin-bottom:24px;text-transform:uppercase}
@@ -35,7 +51,9 @@
 
 <div class="chat"><div class="ct"><span>LIVE CHART // BOT READING</span><span style="color:#00ff88">● CANDLES</span></div><div class="cand" id="cand"><div class="sig buy">BOT • LIVE BUY BTCUSDT | Entry: 64,210 | TP: 65,100 | SL: 63,500 | 92% ▶ BUY</div><div class="sig sell">BOT • LIVE SELL ETHUSDT | Entry: 2,880 | TP: 2,820 | SL: 2,910 | 78% ▼ SELL</div></div><div style="padding:10px 16px;background:#0a0a0a;color:#00ff88;font-size:12px">ALERT: Breakout detected - Bot taking action 🚀</div></div>
 
-<div style="text-align:center"><div class="promo"><span>PROMO: <b style="color:#d4af37">KVF341</b> <span style="color:#00ff88">60% BONUS</span></span><button onclick="navigator.clipboard.writeText('KVF341');this.innerText='COPIED!'" style="background:#d4af37;border:none;padding:7px 14px;border-radius:6px;font-weight:800">COPY</button></div><a href="https://po-op.co/r/KVF341" class="btn bo">⚡ I WANT IT READING FOR ME - GET BONUS</a></div>
+<div style="text-align:center"><div class="promo"><span>PROMO: <b style="color:#d4af37">KVF341</b> <span style="color:#00ff88">60% BONUS</span></span><button onclick="navigator.clipboard.writeText('KVF341');this.innerText='COPIED!'" style="background:#d4af37;border:none;padding:7px 14px;border-radius:6px;font-weight:800">COPY</button></div>
+<!-- FIXED: Bonus button now goes to BOT, not direct po-op -->
+<a href="https://t.me/WWPocketSignalsbot" class="btn bo">⚡ I WANT IT READING FOR ME - GET BONUS</a></div>
 </div>
 
 <div class="section" style="background:linear-gradient(180deg,#0a0a0a,#050505);border-top:1px solid #111;border-bottom:1px solid #111">
@@ -45,12 +63,16 @@ You've been watching charts, losing, guessing. Others sleep. Others scroll. But 
 This robot with glowing green eyes never blinks. Green arrow only goes up. Three lights mean three confirmations. It sits in front of chat, reading, while you live.<br><br>
 Imagine: Bot alerts BUY BTC 92% - you click - profit. Bot alerts SELL ETH 78% - you click - profit. No 3 AM chart staring.
 </div>
-<div style="text-align:center;margin-top:26px"><a href="https://t.me/WWPocketSignalsbot" class="btn bg" style="font-size:18px;padding:18px 36px;animation:pulse 2s infinite">💪 YES, I'M READY TO CONQUER - JOIN NOW</a></div>
+<div style="text-align:center;margin-top:26px"><a href="https://t.me/WWPocketSignalsbot" class="btn bg" style="font-size:18px;padding:18px 36px">💪 YES, I'M READY TO CONQUER - JOIN NOW</a></div>
 </div>
 
 <div class="section"><div class="t">Real Conquerors - Real Feedback</div><div class="cards"><div class="card">⭐⭐⭐⭐⭐<br><br>"Bot reads while I sleep. $340 day one. Green arrow is real!"<br><b>- James K., UK</b></div><div class="card">⭐⭐⭐⭐⭐<br><br>"Auto mode conquered for me. Woke up +$210. Never going back."<br><b>- Sarah M., Dubai</b></div><div class="card">⭐⭐⭐⭐⭐<br><br>"From loser to conqueror. WW + KVF341 = freedom."<br><b>- David O., Uganda</b></div></div></div>
 
-<div style="text-align:center;padding:50px 20px;background:radial-gradient(circle at center, rgba(212,175,55,.15), transparent)"><div style="font-size:22px;font-weight:900;max-width:700px;margin:0 auto 14px">YOUR CHARTS ARE BEING READ RIGHT NOW.<br><span style="color:#d4af37">ARE YOU PROFITING OR JUST WATCHING?</span></div><a href="https://t.me/WWPocketSignalsbot" class="btn bg">🚀 JOIN FREE - LET BOT READ</a><a href="https://po-op.co/r/KVF341" class="btn bo">⚡ GET 60% BONUS</a></div>
+<div style="text-align:center;padding:50px 20px;background:radial-gradient(circle at center, rgba(212,175,55,.15), transparent)"><div style="font-size:22px;font-weight:900;max-width:700px;margin:0 auto 14px">YOUR CHARTS ARE BEING READ RIGHT NOW.<br><span style="color:#d4af37">ARE YOU PROFITING OR JUST WATCHING?</span></div>
+<a href="https://t.me/WWPocketSignalsbot" class="btn bg">🚀 JOIN FREE - LET BOT READ</a>
+<!-- FIXED: Final bonus button also to BOT -->
+<a href="https://t.me/WWPocketSignalsbot" class="btn bo">⚡ GET 60% BONUS INSIDE BOT</a>
+</div>
 
 <div style="text-align:center;padding:30px;color:#444;font-size:12px">WW Pocket Signals • Built for Conquerors • Free Forever</div>
 
