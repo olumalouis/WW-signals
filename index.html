@@ -1,125 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WW Pocket Signals - Conquer</title>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WW Pocket Signals</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#050505;color:#fff;font-family:Inter,Segoe UI,Arial,sans-serif;letter-spacing:.3px;line-height:1.8}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid #151515}
-.logo-wrap{display:flex;align-items:center;gap:10px}
-.logo-circle{width:42px;height:42px;border-radius:50%;border:2px solid #d4af37;background:#0a0a0a;display:flex;align-items:center;justify-content:center;color:#d4af37;font-weight:900;font-size:14px}
-.live{color:#00ff88;font-size:11px;display:flex;align-items:center;gap:6px;letter-spacing:1px}
-.dot{width:8px;height:8px;background:#00ff88;border-radius:50%;box-shadow:0 0 10px #00ff88;animation:p 2s infinite}
-@keyframes p{0%,100%{opacity:1}50%{opacity:.4}}
-.hero{text-align:center;padding:46px 20px 20px}
-.hero-logo{width:340px;max-width:88vw;height:340px;max-height:88vw;margin:0 auto 28px;border-radius:50%;border:3px solid #d4af37;background:radial-gradient(circle at 30% 30%, #1a1a1a, #000);display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 60px rgba(212,175,55,.25),0 0 30px rgba(0,255,136,.15);position:relative}
-.hero-logo img{width:85%;height:85%;object-fit:contain;border-radius:50%}
-.glow{position:absolute;inset:-20px;border-radius:50%;background:radial-gradient(circle, rgba(0,255,136,.12), transparent 70%);z-index:-1}
-.m1{font-size:28px;font-weight:900;line-height:1.15;text-transform:uppercase}
-.m2{color:#d4af37;font-size:20px;font-weight:800;margin:10px 0;text-transform:uppercase}
-.mdesc{color:#aaa;font-size:17px;max-width:600px;margin:14px auto 26px;line-height:1.8}
-.chat{max-width:620px;margin:0 auto 28px;background:#101010;border:1px solid #222;border-radius:14px;overflow:hidden}
-.chat-top{padding:12px 16px;background:#161616;display:flex;justify-content:space-between;font-size:11px;color:#d4af37;letter-spacing:1px}
-.candles{position:relative;height:160px;background:#080808;padding:20px 16px 10px;display:flex;align-items:flex-end;gap:5px}
-.candle{width:9px;border-radius:2px;flex-shrink:0}
-.sig{position:absolute;left:12px;right:12px;padding:10px 12px;border-radius:9px;font-size:13px;font-weight:700;backdrop-filter:blur(8px);line-height:1.4}
-.buy{top:14px;background:rgba(0,255,136,.11);border:1px solid #00ff88;color:#00ff88}
-.sell{bottom:38px;background:rgba(212,175,55,.11);border:1px solid #d4af37;color:#d4af37}
-.promo{max-width:420px;margin:22px auto;background:#111;border:1px solid #d4af37;border-radius:10px;padding:13px 16px;display:flex;justify-content:space-between;align-items:center}
-.ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:26px 0}
-.btn{padding:14px 26px;border-radius:10px;font-weight:800;text-decoration:none;font-size:14px}
-.btn-g{background:#00ff88;color:#000}
-.btn-o{border:1.5px solid #d4af37;color:#d4af37;background:transparent}
-.section{padding:70px 20px;max-width:900px;margin:0 auto}
-.t{color:#d4af37;font-size:22px;font-weight:900;text-align:center;margin-bottom:28px;letter-spacing:1px;text-transform:uppercase}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-.card{background:#121212;border:1px solid rgba(212,175,55,.14);border-radius:12px;padding:20px;line-height:1.7}
-.final{background:linear-gradient(135deg, rgba(212,175,55,.15), rgba(0,255,136,.08));border-top:1px solid #222;border-bottom:1px solid #222;text-align:center;padding:60px 20px}
-.footer{text-align:center;padding:36px 20px;color:#555;font-size:12px}
-</style>
-</head>
-<body>
-<div class="nav">
-<div class="logo-wrap"><div class="logo-circle">WW</div><span style="color:#d4af37;font-weight:800">WW Pocket Signals</span></div>
-<div class="live"><span class="dot"></span> ONLINE • LIVE</div>
-</div>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#050505;color:#fff;font-family:Inter,Arial,sans-serif;letter-spacing:.3px;line-height:1.8}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid #151515}
+.logo{display:flex;align-items:center;gap:10px}.lc{width:40px;height:40px;border-radius:50%;border:2px solid #d4af37;overflow:hidden;background:#000}.lc img{width:100%;height:100%;object-fit:cover}
+.live{color:#00ff88;font-size:11px;display:flex;gap:6px;align-items:center}.dot{width:8px;height:8px;background:#00ff88;border-radius:50%;box-shadow:0 0 8px #00ff88}
+.hero{text-align:center;padding:40px 20px 20px}.hl{width:380px;max-width:88vw;height:380px;max-width:88vw;margin:0 auto 24px;border-radius:50%;border:3px solid #d4af37;overflow:hidden;box-shadow:0 0 60px rgba(212,175,55,.3),0 0 30px rgba(0,255,136,.2)}.hl img{width:100%;height:100%;object-fit:cover}
+.m1{font-size:28px;font-weight:900}.m2{color:#aaa;font-size:18px;margin:8px 0 20px}
+.btn{padding:14px 28px;border-radius:10px;font-weight:800;text-decoration:none;display:inline-block;margin:10px 6px}.bg{background:#00ff88;color:#000}.bo{border:1.5px solid #d4af37;color:#d4af37}
+.chat{max-width:620px;margin:20px auto;background:#101010;border:1px solid #222;border-radius:14px;overflow:hidden}.ct{padding:10px 16px;background:#161616;color:#d4af37;font-size:11px;display:flex;justify-content:space-between}
+.cand{position:relative;height:160px;background:#080808;display:flex;align-items:flex-end;gap:5px;padding:20px 16px 10px}.sig{position:absolute;left:12px;right:12px;padding:10px;border-radius:8px;font-size:13px;font-weight:700;backdrop-filter:blur(6px)}.buy{top:14px;background:rgba(0,255,136,.1);border:1px solid #00ff88;color:#00ff88}.sell{bottom:38px;background:rgba(212,175,55,.1);border:1px solid #d4af37;color:#d4af37}
+.section{padding:60px 20px;max-width:900px;margin:0 auto}.t{color:#d4af37;font-size:22px;font-weight:900;text-align:center;margin-bottom:24px;text-transform:uppercase}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.card{background:#121212;border:1px solid rgba(212,175,55,.14);border-radius:12px;padding:20px}
+.promo{max-width:400px;margin:18px auto;background:#111;border:1px solid #d4af37;border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center}
+</style></head><body>
+
+<div class="nav"><div class="logo"><div class="lc"><img src="logo.jpg" alt="WW"></div><b style="color:#d4af37">WW Pocket Signals</b></div><div class="live"><span class="dot"></span>ONLINE • LIVE</div></div>
 
 <div class="hero">
-<div class="hero-logo">
-<div class="glow"></div>
-<!-- Replace src with your logo file - upload logo.jpg to GitHub -->
-<img src="logo.jpg" alt="WW Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-<div style="display:none;text-align:center"><div style="font-size:64px">🤖</div><div style="color:#d4af37;font-size:12px;margin-top:6px;letter-spacing:2px">WW POCKET SIGNALS</div><div style="color:#00ff88;font-size:20px">↗</div></div>
-</div>
-
-<div class="m1">They Sleep.<br>Your Bot Reads.</div>
-<div class="m2">While They Guess, You Conquer.</div>
-<div class="mdesc">Your WW robot with two feet stands firm in front of the charts 24/7 — reading every candlestick, every BUY, every SELL — so you don't have to. Stop watching life pass. Start taking it.</div>
-
-<div class="chat">
-<div class="chat-top"><span>LIVE CHART // BOT READING</span><span style="color:#00ff88">● LIVE CANDLES</span></div>
-<div class="candles" id="c">
-<div class="sig buy">BOT • LIVE BUY BTCUSDT | Entry: 64,210 | TP: 65,100 | SL: 63,500 | 92% ▶ BUY</div>
-<div class="sig sell">BOT • LIVE SELL ETHUSDT | Entry: 2,880 | TP: 2,820 | SL: 2,910 | 78% ▼ SELL</div>
-</div>
-<div style="padding:10px 16px;background:#0a0a0a;color:#00ff88;font-size:12px">ALERT: Breakout detected - Bot taking action now 🚀 Momentum rising</div>
-</div>
-
-<div class="promo">
-<span style="font-size:14px">PROMO: <b style="color:#d4af37">KVF341</b> <span style="color:#00ff88">60% BONUS</span></span>
-<button onclick="navigator.clipboard.writeText('KVF341');this.innerText='COPIED!'" style="background:#d4af37;color:#000;border:none;padding:8px 14px;border-radius:6px;font-weight:800;cursor:pointer">COPY</button>
-</div>
-
-<div class="ctas">
-<a href="https://t.me/WWPocketSignalsbot" class="btn btn-g">🚀 Join Free - Let Bot Read For You</a>
-<a href="https://po-op.co/r/KVF341" class="btn btn-o">⚡ Get 60% Bonus - Start Conquering</a>
-</div>
+<div class="hl"><img src="logo.jpg" alt="WW Logo"></div>
+<div class="m1">WELCOME TO WW POCKET SIGNALS, CONQUEROR!</div>
+<div class="m2">You just found the bot that never sleeps.</div>
+<a href="https://t.me/WWPocketSignalsbot" class="btn bg">🚀 JOIN FREE NOW - ENTER THE BOT</a>
 </div>
 
 <div class="section">
-<div class="t">They Conquered - You're Next</div>
+<div class="t">How Your WW Bot Works For You - While You Live</div>
 <div class="cards">
-<div class="card">⭐⭐⭐⭐⭐<br><br>"I was losing. Now my bot reads while I sleep. $340 first day! Two feet firm on ground!"<br><br><b>- James K., UK</b></div>
-<div class="card">⭐⭐⭐⭐⭐<br><br>"This robot never misses a candle! Stands firm, trades firm. Best signals!"<br><br><b>- Sarah M., Dubai</b></div>
-<div class="card">⭐⭐⭐⭐⭐<br><br>"From watcher to conqueror. KVF341 + WW robot = life changed."<br><br><b>- David O., Uganda</b></div>
-</div>
-</div>
-
-<div class="final">
-<div style="font-size:24px;font-weight:900;max-width:700px;margin:0 auto 14px;line-height:1.3">YOUR CHARTS ARE BEING READ RIGHT NOW.<br><span style="color:#d4af37">THE ONLY QUESTION IS - ARE YOU PROFITING OR JUST WATCHING?</span></div>
-<div style="color:#aaa;max-width:600px;margin:0 auto 26px">Stop scrolling. Start conquering. One click. Free forever. Bot is sitting in front of chart reading - are you in?</div>
-<a href="https://t.me/WWPocketSignalsbot" class="btn btn-g" style="font-size:18px;padding:18px 36px">YES, I WANT MY BOT READING NOW →</a>
+<div class="card"><b>👁️ IT WATCHES</b><br><span style="color:#aaa">24/7 scanning 75+ pairs - crypto, forex, OTC. Candlesticks, trends, breakouts - it sees what you miss while you sleep.</span></div>
+<div class="card"><b>🧠 IT READS</b><br><span style="color:#aaa">AI analyzes momentum, confidence %, entry, TP, SL. Only sends signal when 75%+ sure. No guessing, only data.</span></div>
+<div class="card"><b>⚡ IT ALERTS</b><br><span style="color:#aaa">BUY or SELL drops in Telegram instantly. Auto mode? It trades for you. Manual? You click and conquer.</span></div>
 </div>
 
-<div class="section" style="padding-top:50px">
-<div class="cards">
-<div class="card" style="text-align:center"><b>75+ PAIRS</b><br><span style="color:#aaa">Crypto, Forex, Stocks - Bot reads all</span></div>
-<div class="card" style="text-align:center"><b>AUTO & MANUAL</b><br><span style="color:#aaa">Let bot trade or signal you</span></div>
-<div class="card" style="text-align:center"><b>FREE FOREVER</b><br><span style="color:#aaa">No fees, just KVF341 bonus</span></div>
-</div>
+<div class="chat"><div class="ct"><span>LIVE CHART // BOT READING</span><span style="color:#00ff88">● CANDLES</span></div><div class="cand" id="cand"><div class="sig buy">BOT • LIVE BUY BTCUSDT | Entry: 64,210 | TP: 65,100 | SL: 63,500 | 92% ▶ BUY</div><div class="sig sell">BOT • LIVE SELL ETHUSDT | Entry: 2,880 | TP: 2,820 | SL: 2,910 | 78% ▼ SELL</div></div><div style="padding:10px 16px;background:#0a0a0a;color:#00ff88;font-size:12px">ALERT: Breakout detected - Bot taking action 🚀</div></div>
+
+<div style="text-align:center"><div class="promo"><span>PROMO: <b style="color:#d4af37">KVF341</b> <span style="color:#00ff88">60% BONUS</span></span><button onclick="navigator.clipboard.writeText('KVF341');this.innerText='COPIED!'" style="background:#d4af37;border:none;padding:7px 14px;border-radius:6px;font-weight:800">COPY</button></div><a href="https://po-op.co/r/KVF341" class="btn bo">⚡ I WANT IT READING FOR ME - GET BONUS</a></div>
 </div>
 
-<div class="footer">WW Pocket Signals • Built for Conquerors • Conquer the Markets</div>
+<div class="section" style="background:linear-gradient(180deg,#0a0a0a,#050505);border-top:1px solid #111;border-bottom:1px solid #111">
+<div class="t">Stop Watching. Start Conquering.</div>
+<div style="max-width:700px;margin:0 auto;color:#ccc;font-size:17px;text-align:center;line-height:1.9">
+You've been watching charts, losing, guessing. Others sleep. Others scroll. But you? You found WW.<br><br>
+This robot with glowing green eyes never blinks. Green arrow only goes up. Three lights mean three confirmations. It sits in front of chat, reading, while you live.<br><br>
+Imagine: Bot alerts BUY BTC 92% - you click - profit. Bot alerts SELL ETH 78% - you click - profit. No 3 AM chart staring.
+</div>
+<div style="text-align:center;margin-top:26px"><a href="https://t.me/WWPocketSignalsbot" class="btn bg" style="font-size:18px;padding:18px 36px;animation:pulse 2s infinite">💪 YES, I'M READY TO CONQUER - JOIN NOW</a></div>
+</div>
+
+<div class="section"><div class="t">Real Conquerors - Real Feedback</div><div class="cards"><div class="card">⭐⭐⭐⭐⭐<br><br>"Bot reads while I sleep. $340 day one. Green arrow is real!"<br><b>- James K., UK</b></div><div class="card">⭐⭐⭐⭐⭐<br><br>"Auto mode conquered for me. Woke up +$210. Never going back."<br><b>- Sarah M., Dubai</b></div><div class="card">⭐⭐⭐⭐⭐<br><br>"From loser to conqueror. WW + KVF341 = freedom."<br><b>- David O., Uganda</b></div></div></div>
+
+<div style="text-align:center;padding:50px 20px;background:radial-gradient(circle at center, rgba(212,175,55,.15), transparent)"><div style="font-size:22px;font-weight:900;max-width:700px;margin:0 auto 14px">YOUR CHARTS ARE BEING READ RIGHT NOW.<br><span style="color:#d4af37">ARE YOU PROFITING OR JUST WATCHING?</span></div><a href="https://t.me/WWPocketSignalsbot" class="btn bg">🚀 JOIN FREE - LET BOT READ</a><a href="https://po-op.co/r/KVF341" class="btn bo">⚡ GET 60% BONUS</a></div>
+
+<div style="text-align:center;padding:30px;color:#444;font-size:12px">WW Pocket Signals • Built for Conquerors • Free Forever</div>
 
 <script>
-const cont=document.getElementById('c');
-for(let i=0;i<28;i++){
-let h=28+Math.random()*110;
-let green=Math.random()>0.42;
-let d=document.createElement('div');
-d.className='candle';
-d.style.height=h+'px';
-d.style.background=green?'#00ff88':'#ff4444';
-d.style.boxShadow=green?'0 0 6px rgba(0,255,136,.4)':'0 0 6px rgba(255,68,68,.3)';
-let w=document.createElement('div');
-w.style.width='1px';w.style.height='14px';w.style.background=green?'#00ff88':'#ff4444';w.style.margin='0 auto';
-let wrap=document.createElement('div');
-wrap.style.display='flex';wrap.style.flexDirection='column';wrap.style.alignItems='center';wrap.style.gap='2px';
-wrap.appendChild(w);wrap.appendChild(d);
-cont.appendChild(wrap);
-}
+const c=document.getElementById('cand');for(let i=0;i<28;i++){let h=28+Math.random()*110;let g=Math.random()>0.4;let d=document.createElement('div');d.style.width='9px';d.style.height=h+'px';d.style.background=g?'#00ff88':'#ff4444';d.style.borderRadius='2px';c.appendChild(d);}
 </script>
-</body>
-                                              </html>
+</body></html>
